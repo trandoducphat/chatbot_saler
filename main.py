@@ -82,12 +82,12 @@ def test4():
 
 
 def test5():
-    test_compare_state = ChatState("tôi đang thắc mắc về số chỗ ngồi của xe Toyota Vios", Intent.COMPARE_CARS, [], "", [], [], "", "")
+    test_compare_state = ChatState("tôi phân vân giữa xe Toyota Vios  và Land Cruiser Prado", Intent.COMPARE_CARS, [], "", [], [], "", "")
     test_compare_state = retrieve_product_node(test_compare_state)
     print(test_compare_state.response)
 
 def test6():
-    test_info_state = ChatState("tôi đang thắc mắc về số chỗ ngồi và nhiên liệu của xe Toyota Land Cruiser Prado", Intent.ASK_CAR_INFO, [], "", [], [], "", "")
+    test_info_state = ChatState("tôi đang thắc mắc về số chỗ ngồi và nhiên liệu của xe Toyota Land Cruiser Prado và Toyota Vios", Intent.ASK_CAR_INFO, [], "", [], [], "", "")
     test_info_state = retrieve_info_node(test_info_state)
     print(test_info_state.response)
     print("------------")
@@ -105,6 +105,6 @@ if __name__ == "__main__":
     # test1()
     # test2()
     # test3()
-    test4()
-    # test5()
+    # test4()
+    test5()
     # test6()

@@ -9,7 +9,7 @@ from langchain_core.runnables import RunnableLambda
 
 def retrieve_products_docs(state: ChatState) -> ChatState:
     product_retriver = get_product_retriever()
-    retrieved_products = product_retriver.retrieve(state.user_message, 2, 0.3)
+    retrieved_products = product_retriver.retrieve(state.user_message, 2, 0.0)
 
     state.compared_car = retrieved_products
     return state
